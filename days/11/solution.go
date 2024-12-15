@@ -23,8 +23,6 @@ func (v *stone) getInt() int {
 func (v *stone) blink() []stone {
 	output := []stone{}
 
-	// fmt.Println("blinking ", v.value)
-
 	num := v.getInt()
 	if num == 0 {
 		output = append(output, stone{"1"})
@@ -106,7 +104,6 @@ func part2() {
 
 	n := 75
 	for _ = range n {
-		// fmt.Println(store)
 
 		newStore := make(map[string]int)
 
@@ -127,7 +124,6 @@ func part2() {
 		}
 		store = newStore
 	}
-	// fmt.Println(store)
 
 	ans := 0
 	for _, count := range store {
