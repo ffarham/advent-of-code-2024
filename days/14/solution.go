@@ -189,6 +189,8 @@ func part2() {
 		}
 	}
 
+	plot(historians)
+
 	fmt.Printf("Part 2 Ans: %v\n", seconds)
 }
 
